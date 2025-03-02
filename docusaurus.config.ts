@@ -10,7 +10,7 @@ const moreColumn = {
   items: [
     {
       label: 'GitHub',
-      href: 'https://github.com/spmse',
+      href: 'https://github.com/GeorgStrasberger/dev-blog',
     },
   ],
 }
@@ -22,20 +22,23 @@ if (blogEnabled) {
 }
 
 const config: Config = {
-  title: 'DSO Live Demo Docs',
+
+
+  title: 'GS Docs',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://GeorgStrassberger.github.io', // Deine GitHub Pages URL
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/dev-blog-template/',
+  baseUrl: '/dev-blog/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'spmse', // Usually your GitHub org/user name.
-  projectName: 'dso-dev-blog', // Usually your repo name.
+  organizationName: 'GeorgStrassberger', // Usually your GitHub org/user name.
+  projectName: 'dev-blog', // Usually your repo name.
+  trailingSlash: false, // Empfohlen für GitHub Pages
 
   deploymentBranch: 'main',
 
@@ -59,7 +62,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/spmse/dev-blog-template',
+            'https://github.com/GeorgStrasberger/dev-blog',
         },
         blog: blogEnabled ? 
           {
@@ -71,7 +74,7 @@ const config: Config = {
             // Please change this to your repo.
             // Remove this to remove the "edit this page" links.
             editUrl:
-              'https://github.com/spmse/dev-blog-template',
+              'https://github.com/GeorgStrassberger/dev-blog',
             // Useful options to enforce blogging best practices
             onInlineTags: 'warn',
             onInlineAuthors: 'warn',
@@ -103,7 +106,7 @@ const config: Config = {
         },
         // {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/spmse/dev-blog-template',
+          href: 'https://github.com/GeorgStrassberger/dev-blog',
           label: 'Github',
           position: 'right',
         },
@@ -139,19 +142,6 @@ const config: Config = {
           ],
         },
         moreColumn
-        // {
-        //   title: 'More',
-        //   items: [
-        //     {
-        //       label: 'GitHub',
-        //       href: 'https://github.com/facebook/docusaurus',
-        //     },
-        //     blogEnabled && {
-        //       label: 'Blog',
-        //       to: '/blog',
-        //     },
-        //   ],
-        // },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
     },
